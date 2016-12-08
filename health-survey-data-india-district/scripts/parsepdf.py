@@ -77,4 +77,4 @@ def parse_file(df,district,state,writefile):
     with open(writefile, 'a') as f:
         newdata.to_csv(f, header=False,index=False)
 
-file_extractor(".", "Madhya Pradesh", "healthdata.csv")
+file_extractor("../Test/", "Madhya Pradesh", "../mp-data.csv")
