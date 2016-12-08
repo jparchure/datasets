@@ -2,7 +2,8 @@ As the front page says, this data was scraped off the website of National Family
 
 The folder *rawfiles* contains pdf files for each district. For this one instance, I clicked on each district to download its pdf. However, for future work, I plan to write a scraper to do this job, which as you can guess, was not the most fun part of this exercise.
 The folder *scripts* contains the python script used to generate tables from the pdfs. I can not thank the guys at <a href="http://tabula.technology/"> Tabula </a> enough for the amazing tool they developed to extract pdf tables.
-I also used the helpful wrapper <a href="https://github.com/chezou/tabula-py"> Tabula-py </a> for data munging.
+I also used the helpful wrapper <a href="https://github.com/chezou/tabula-py"> Tabula-py </a> for data munging. 
+You can run the script to obtain the same data. However, the generated csv will not have a header row. You can either add your own header row, or else create an empty csv with the header row pre attached. This issue arises for having to loop over different districts, each of which have their own headers, many times not consistent. I tried writing a header to the file immediately after opening, but some encoding issues of how the line break were handled prevented me from a satisfactory result.
 I have left comments in the code, but still, feel free to drop me an email should you have any questions.
 
 The chief data file is mp-data.csv. Again, as I said, I might either generate one file for each state or merge it all in a single giant file, in which case I will replace this with an updated version. 
