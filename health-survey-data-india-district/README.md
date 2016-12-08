@@ -12,7 +12,5 @@ My script was hardcoded for "Urban" which failed for the Rural districts. Just w
 This not only messed with data split but also the table structure. So, in the future should you want to parse your own pdfs, do take these caveats into account.
 
 Well, thank you for reading this. I hope you find the data file useful.
-Shoot me an email or a tweet if you found bugs in data processing or just to sa
-
-y Hi! Would love to see how you used this data
+Shoot me an email or a tweet if you found bugs in data processing or just to say Hi! Would love to see how you used this data
 Ciao
